@@ -10,16 +10,19 @@
 		}
 		.footer{
 			text-align: center;
-		    font-size: .8em;
-		    color: #aaa;
+			font-size: .8em;
+			margin: 30px auto;
 		}
 		.footer a{
 			text-decoration: none;
-			color: #aaa;
+			color: #ddd;
+			transition: all 0.2s;
+			padding: 5px;
 		}
 		.footer a:hover{
 			text-decoration: none;
 			border-bottom: 1px solid #2196F3;
+			color: #999;
 		}
 	</style>
 	<script>
@@ -51,8 +54,26 @@
 		</script>
 	<!-- 多说公共JS代码 end -->
 </div>
+
+<div class="comment">
+	<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+</div>
+
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+<script>
+var cloudTieConfig = {
+  url: document.location.href,
+  sourceId: "",
+  productKey: "3f38e131378a4d2da596eeeafae8934d",
+  target: "cloud-tie-wrapper"
+};
+var yunManualLoad = true;
+Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+</script>
+
 <div class="footer">
 	<a href="https://item.taobao.com/item.htm?id=530237903650" target="_blank">没有我想要的，我要订制</a>
 </div>
+
 </body>
 </html>
