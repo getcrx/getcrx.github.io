@@ -17,7 +17,7 @@
 			text-decoration: none;
 			color: #ddd;
 			transition: all 0.2s;
-			padding: 5px;
+			padding: 5px 2px;
 		}
 		.footer a:hover{
 			text-decoration: none;
@@ -37,21 +37,18 @@
 </head>
 <body>
 
-<div class="comment">
-	<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-</div>
-
-<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-<script>
-var cloudTieConfig = {
-  url: document.location.href,
-  sourceId: "",
-  productKey: "3f38e131378a4d2da596eeeafae8934d",
-  target: "cloud-tie-wrapper"
-};
-var yunManualLoad = true;
-Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
-</script>
+<script type="text/javascript">
+	(function(){
+	var url = "http://widget.weibo.com/distribution/comments.php?width=0&url=http%3A%2F%2Fgetcrx.cn%2Fcomment.html&border=1&brandline=y&fontsize=14&appkey=280921183&dpc=1";
+	document.write('<iframe id="WBCommentFrame" src="' + url + '" scrolling="no" frameborder="0" style="width:100%"></iframe>');
+	})();
+	</script>
+	<script src="http://tjs.sjs.sinajs.cn/open/widget/js/widget/comment.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	window.WBComment.init({
+			"id": "WBCommentFrame"
+	});
+	</script>
 
 <div class="footer">
 	<a href="https://item.taobao.com/item.htm?id=530237903650" target="_blank">没有我想要的，我要订制</a>
