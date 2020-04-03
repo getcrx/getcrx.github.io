@@ -16,6 +16,7 @@
 		})();</script>
 	<link rel=search type=application/opensearchdescription+xml href=//cdn.chromedevtools.com/diy/opensearch.xml>
 	<link href=http://cdn.chromedevtools.com/diy/getcrx/static/css/getcrx.cn.8934b.css rel=stylesheet>
+	<style>.gray{filter: grayscale(100%);}</style>
 </head>
 
 <body>
@@ -31,7 +32,7 @@
 	<script type=text/javascript src=http://cdn.chromedevtools.com/diy/getcrx/static/js/getcrx.cn.1441d.js></script>
 	<script>
 	function gray(el){
-		el && (el.style.filter = 'grayscale(100%)');
+		el && (el.classList.add('gray'));
 	}
 	if (new Date() < new Date('2020-4-7')) {
 		[
