@@ -16,7 +16,7 @@
 		})();</script>
 	<link rel=search type=application/opensearchdescription+xml href=//cdn.chromedevtools.com/diy/opensearch.xml>
 	<link href=http://cdn.chromedevtools.com/diy/getcrx/static/css/getcrx.cn.8934b.css rel=stylesheet>
-	<style>.gray{filter: grayscale(100%);}</style>
+	<style>.gray, .gray .dialog {filter: grayscale(100%);}</style>
 </head>
 
 <body>
@@ -37,7 +37,6 @@
 	if (new Date() < new Date('2020-4-7')) {
 		[
 			document.querySelector('#app'),
-			document.querySelector('.dialog'),
 		].forEach(el=> gray(el));
 	}
 	</script>
